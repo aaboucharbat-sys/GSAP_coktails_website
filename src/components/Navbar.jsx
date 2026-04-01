@@ -23,8 +23,8 @@ const Navbar = () => {
       },
       {
         backgroundColor: "rgba(0,0,0,0.4)",
-        backdropFilter: "blur(12px)",
-        webkitBackdropFilter: "blur(12px)",
+        backdropFilter: "blur(1px)",
+        webkitBackdropFilter: "blur(1px)",
         ease: "none",
       },
     );
