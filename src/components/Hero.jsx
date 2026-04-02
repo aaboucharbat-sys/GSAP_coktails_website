@@ -47,27 +47,25 @@ const Hero = () => {
       .to(".left-leaf", { y: -200 }, 0)
       .to(".right-leaf", { y: 250 }, 0);
 
-      const startValue = isMobile ? "top 50%" : "center 60%" 
-      const endValue = isMobile ? "120% top" : "bottom top"
+    const startValue = isMobile ? "top 50%" : "center 60%";
+    const endValue = isMobile ? "200% top" : "bottom top";
 
     // Video scroll animation
     const video = videoRef.current;
     const tl = gsap.timeline({
-        scrollTrigger : {
-            trigger : 'video'  , 
-            start :startValue , 
-            end : endValue , 
-            scrub : true , 
-            pin : true 
-        }
-    }
-    
-) 
-video.onloadedmetadata = ()=>{
-    tl.to(video,{
-        currentTime  : video.duration  , 
-    } )
-}
+      scrollTrigger: {
+        trigger: "video",
+        start: startValue,
+        end: endValue,
+        scrub: true,
+        pin: true,
+      },
+    });
+    video.onloadedmetadata = () => {
+      tl.to(video, {
+        currentTime: video.duration,
+      });
+    };
   }, []);
 
   return (

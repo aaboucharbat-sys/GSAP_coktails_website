@@ -17,7 +17,6 @@ const Navbar = () => {
     navTween.fromTo(
       "nav",
       {
-      
         backdropFilter: "blur(0px)",
         webkitBackdropFilter: "blur(0px)",
       },
