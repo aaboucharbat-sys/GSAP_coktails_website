@@ -114,7 +114,7 @@ const Hero = () => {
       <div className="video absolute inset-0 z-0 ">
         <video
           ref={videoRef}
-          src="https://res.cloudinary.com/dbblmwrdf/video/upload/v1/output_optimized_gxyvq6.mp4"
+          src="https://res.cloudinary.com/dbblmwrdf/video/upload/v1775604954/output_optimized1_velred.mp4"
           muted
           playsInline
           preload="auto"
